@@ -1,0 +1,3 @@
+@echo off
+echo Starting NikitOS...
+qemu-system-i386 -drive file=../build/NikitOS.bin,format=raw,media=disk -net nic,model=rtl8139 -net nic,model=rtl8139 -net user
